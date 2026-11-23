@@ -1,4 +1,4 @@
-# [App Name]
+# [Student Payment Organizations and Tracking System (SPOTS)]
 <!-- About your app: what does your app do? Example: "Today's carinderia menu and orders, without paper." -->
 
 ## Problem
@@ -8,6 +8,7 @@ Example: Carinderia owners in Manolo Fortich write orders on paper and lose trac
 ## Target Users
 <!-- List 1–2 types of people who will use your app. Be specific.
 Example: Carinderia owners; customers ordering for pickup -->
+College Students; Institute Treasurer; School Admins
 
 ## Solution
 <!-- Add your solution -->
@@ -15,6 +16,7 @@ Example: Carinderia owners; customers ordering for pickup -->
 ## Main Feature
 <!-- The ONE thing your app must do. If you removed everything else, what's left?
 Example: Customers view today's menu; the owner adds and tracks orders. -->
+Students can view and track their
 
 ## Pages
 <!-- List 3–5 pages and one line on what each page shows. Homepage and App page are required. -->
