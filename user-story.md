@@ -17,24 +17,23 @@ US1: As a customer, I want to see today's menu with prices so that I can decide 
 US - User Story
 -->
 
-### Feature: 
-US1: As a Department Treasurer, I want to update a student's fee status using a Paid or Unpaid dropdown list so that payment records stay accurate without manual errors.
+### Feature: Department Treasurer Dashboard
+US1: As a Department Treasurer, I want to update a student's fee status to Paid or Unpaid using a quick toggle or dropdown so that payment records stay accurate without manual errors.
 
-US2: As a Department Treasurer, I want to search or filter the student masterlist by keyword or payment status so that I can quickly find a specific student's record.
+US2: As a Department Treasurer, I want to post department-specific or year-level fees so that students in my assigned group are billed for their required fees.
 
-US3: As a Department Treasurer, I want to post department-specific fees for my assigned year level so that students are billed for their required organizational obligations.
+US3: As a Department Treasurer, I want to view the student clearance list with real-time clearance statuses so that I can verify which students are automatically cleared once all required fees are paid.
 
-### Feature: 
-US1: As a School Admin, I want to post school-wide fees for a selected department so that campus-wide obligations are assigned to students automatically.
+### Feature: School Admin Dashboard
+US1: As a School Admin, I want to post school-wide fees for a department so that campus-wide obligations are recorded for students.
 
-US2: As a School Admin, I want to view overall collection metrics on the officer dashboard so that I can monitor financial progress across the school.
+US2: As a School Admin, I want to view collection metrics, student counts, and financial statistics on the officer dashboard so that I can monitor financial progress across the school.
 
-US3: As a School Admin, I want to filter collection metrics and student counts by department so that I can check the financial standing of a specific institute.
+US3: As a School Admin, I want to filter collection metrics, student counts, and posted fees by department or institute so that I can check records for a specific unit.
 
-### Feature:
-US1: As a Student, I want to view my required school and department fees in one dashboard so that I can easily track my unpaid balances.
+### Feature: Student Dashboard
+US1: As a Student, I want to view my School-Wide Fees and Institutional/Department Fees on my dashboard so that I can track my Paid and Unpaid balances.
 
-US2: As a Student, I want to check my real-time clearance status on my dashboard so that I know whether I am cleared for enrollment or exams.
+US2: As a Student, I want to check my real-time clearance status banner on my dashboard so that I know whether I am cleared.
 
-US3: As a Student, I want to open the receipt for any fee marked as Paid so that I have proof of my completed payment.
-
+US3: As a Student, I want to view the receipt for any fee marked as Paid so that I have proof of my completed payment.
