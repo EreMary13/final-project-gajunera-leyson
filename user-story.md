@@ -18,7 +18,7 @@ US - User Story
 -->
 
 ### Feature: Department Treasurer Dashboard
-US1: As a Department Treasurer, I want to update a student's fee status to Paid or Unpaid using a quick toggle or dropdown so that payment records stay accurate without manual errors.
+US1: As a Department Treasurer, I want to search, filter, and use a dropdown to update a student's fee status to Paid or Unpaid so that payment records stay accurate without manual errors.
 
 US2: As a Department Treasurer, I want to post department-specific or year-level fees so that students in my assigned group are billed for their required fees.
 
@@ -34,6 +34,6 @@ US3: As a School Admin, I want to filter collection metrics, student counts, and
 ### Feature: Student Dashboard
 US1: As a Student, I want to view my School-Wide Fees and Institutional/Department Fees on my dashboard so that I can track my Paid and Unpaid balances.
 
-US2: As a Student, I want to check my real-time clearance status banner on my dashboard so that I know whether I am cleared.
+US2: As a Student, I want to check my real-time clearance status banner and read-only dashboard view so that I know whether I am cleared and cannot accidentally alter records.
 
 US3: As a Student, I want to view the receipt for any fee marked as Paid so that I have proof of my completed payment.
