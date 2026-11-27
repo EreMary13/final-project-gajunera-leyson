@@ -22,7 +22,7 @@ AC - Acceptance Criteria
 ### Feature: Department Treasurer Dashboard 
 US1: As a user, I want to search, filter, and use a drop down list to mark student fees as Paid or Unpaid, so that I can update records quickly and avoid manual errors.
 - AC1.1: Search by keyword must filter the student list immediately and be case-insensitive.
-- AC1.2: Status filter must display only students matching the selected status (Paid, Pending, or Unpaid).
+- AC1.2: Status filter must display only students matching the selected status (Paid or Unpaid).
 - AC1.3: Selecting Paid or Unpaid from the status dropdown must automatically save the change, record the date and time paid, and enable clearance approval once all required fees are settled.
 
 
