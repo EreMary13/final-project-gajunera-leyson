@@ -28,7 +28,7 @@ US1: As a user, I want to search, filter, and use a drop down list to mark stude
 
 ### Feature: School Admin Dashboard
 US2: As a user, I want to post school-wide fees and view collection metrics on the officer dashboard, so that I can oversee financial progress and ensure accurate records across all departments.
-- AC2.1: Submitting a new fee form requires a Fee Description, a positive Amount (> ₱0), a Due Date, and a selected Department before assigning it as Unpaid to students in that department.
+- AC2.1: Submitting a new school-wide fee form requires a Fee Description, a positive Amount (> ₱0), a Due Date, and selecting All Departments before assigning the fee as Unpaid to students.
 - AC2.2:  Leaving any required field blank or entering a zero/negative amount must block form submission and display an error message.
 - AC2.3: The officer dashboard must display Total Expected, Total Collected, Total Unpaid, and Percentage Collected, updating dynamically when filtered by department.
 
