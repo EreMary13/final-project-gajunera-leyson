@@ -19,24 +19,39 @@ Example:
 AC - Acceptance Criteria
 -->
 
-### Feature: Department Treasurer Dashboard 
-US1: As a user, I want to search, filter, and use a drop down list to mark student fees as Paid or Unpaid, so that I can update records quickly and avoid manual errors.
-- AC1.1: Search by keyword must filter the student list immediately and be case-insensitive.
-- AC1.2: Status filter must display only students matching the selected status (Paid or Unpaid).
-- AC1.3: Selecting Paid or Unpaid from the status dropdown must automatically save the change, record the date and time paid, and enable clearance approval once all required fees are settled.
+### Feature: Department Treasurer Dashboard
 
+US1: As a Department Treasurer, I want to search, filter, and use a dropdown to update a student's fee status to Paid or Unpaid so that payment records stay accurate without manual errors.
+- AC1.1: Typing a keyword in the search box filters the student list immediately and is case-insensitive.
+- AC1.2: Selecting Paid or Unpaid in the status filter displays only students matching that status (plus an option to show all students).
+- AC1.3: Selecting Paid or Unpaid from the fee status dropdown automatically saves the change to localStorage, records the date and time paid when marked Paid (or resets them to — when switched back to Unpaid), and updates clearance status automatically in real time once all required fees are Paid.
+
+US2: As a Department Treasurer, I want to post department-specific or year-level fees so that students in my assigned group are billed for their required fees.
+- AC2.1: Submitting the new fee form requires a Fee Description, a positive Amount (> ₱0), a Due Date, and a target department/year-level group before adding the fee as Unpaid for students in that group.
+- AC2.2: Leaving any required field blank or entering 0 or a negative amount blocks submission and displays a clear error message.
+
+US3: As a Department Treasurer, I want to view the student clearance list with real-time clearance statuses so that I can verify which students are automatically cleared once all required fees are Paid.
+- AC3.1: Each student's clearance status automatically displays Cleared when all of their required fees are Paid, and displays Not Cleared if any required fee remains Unpaid.
 
 ### Feature: School Admin Dashboard
-US2: As a user, I want to post school-wide fees and view collection metrics on the officer dashboard, so that I can oversee financial progress and ensure accurate records across all departments.
-- AC2.1: Submitting a new school-wide fee form requires a Fee Description, a positive Amount (> ₱0), a Due Date, and selecting All Departments before assigning the fee as Unpaid to students.
-- AC2.2:  Leaving any required field blank or entering a zero/negative amount must block form submission and display an error message.
-- AC2.3: The officer dashboard must display Total Expected, Total Collected, Total Unpaid, and Percentage Collected, updating dynamically when filtered by department.
 
+US1: As a School Admin, I want to post school-wide fees for all departments so that campus-wide obligations apply to every student.
+- AC1.1: Submitting the school-wide fee form requires a Fee Description, a positive Amount (> ₱0), a Due Date, and All Departments selected before recording the fee as Unpaid across all departments and students.
+- AC1.2: Leaving any required field blank, entering 0 or a negative amount, or selecting a single department instead of All Departments blocks submission and displays a clear error message.
 
-### Feature: Student Dashboard 
-US3: As a user, I want to view my fees and real-time clearance status on a centralized dashboard, so that I can track unpaid balances, view receipts, and check my clearance eligibility.
-- AC3.1: The dashboard must display the student's profile details (Name, ID, Year/Section) and separate fees into School Fees and Department Fees tables with columns for Amount, Date Paid, Time Paid, Status, and Receipt.
-- AC3.2:  Fees marked as PAID must display a green badge, exact Date/Time Paid, and a clickable View button to open the receipt, while UNPAID fees must display a red badge with blank dashes (—).
-- AC3.3: The student dashboard must be strictly read-only, preventing students from editing fee amounts or changing payment statuses.
+US2: As a School Admin, I want to view collection metrics, student counts, and financial statistics on the officer dashboard so that I can monitor financial progress across the school.
+- AC2.1: The officer dashboard displays Total Expected, Total Collected, Total Unpaid, Percentage Collected, and student counts calculated from current fee records.
 
+US3: As a School Admin, I want to filter collection metrics, student counts, and posted fees by department or institute so that I can check records for a specific unit.
+- AC3.1: Selecting a department or institute from the filter dynamically updates the displayed collection metrics, student counts, and posted fees to match that selected unit (and shows all units when reset).
 
+### Feature: Student Dashboard
+
+US1: As a Student, I want to view my School-Wide Fees and Institutional/Department Fees on my dashboard so that I can track my Paid and Unpaid balances.
+- AC1.1: The Student Dashboard displays the student's profile details (Name, ID, Year/Section) and separates fees into School-Wide Fees and Department/Institutional Fees tables with Amount, Date Paid, Time Paid, Status, and Receipt columns.
+
+US2: As a Student, I want to check my real-time clearance status banner and read-only dashboard view so that I know whether I am cleared and cannot accidentally alter records.
+- AC2.1: The clearance banner reflects real-time clearance status based on required fees, and the dashboard remains strictly read-only with no controls to edit fee amounts or change payment statuses.
+
+US3: As a Student, I want to view the receipt for any fee marked as Paid so that I have proof of my completed payment.
+- AC3.1: Fees marked Paid display a PAID badge, Date/Time Paid, and a clickable View button that opens the receipt, while Unpaid fees display an UNPAID badge with — for Date/Time Paid and no receipt button.
