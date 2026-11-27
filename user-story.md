@@ -25,7 +25,7 @@ US2: As a Department Treasurer, I want to post department-specific or year-level
 US3: As a Department Treasurer, I want to view the student clearance list with real-time clearance statuses so that I can verify which students are automatically cleared once all required fees are paid.
 
 ### Feature: School Admin Dashboard
-US1: As a School Admin, I want to post school-wide fees for a department so that campus-wide obligations are recorded for students.
+School Admin US1: As a School Admin, I want to post school-wide fees for all departments so that campus-wide obligations apply to every student.
 
 US2: As a School Admin, I want to view collection metrics, student counts, and financial statistics on the officer dashboard so that I can monitor financial progress across the school.
 
